@@ -1,16 +1,16 @@
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import Home from "./pages/Home.jsx";
 
 
 function App() {
-
-  return (
-      <>
-
-        <h1 className="text-6xl">
-          Hello world!
-        </h1>
-
-      </>
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route path = "/" element = {<Navigate to = "/Home"/>}></Route>
+                <Route path = "/Home" element = {<Home/>}></Route>
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;
