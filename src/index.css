@@ -1,6 +1,14 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+@layer utilities {
+    .gradient-text{
+        background : linear-gradient(to right, #000, #1a2949, #194acc, #1548cc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
 
 *{
     box-sizing: border-box;
