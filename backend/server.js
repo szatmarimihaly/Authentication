@@ -1,19 +1,32 @@
-require("dotenv").config();
+require('dotenv').config();
 const express = require("express");
+const mongoose = require("mongoose");
 const cors = require("cors");
-const connectDB = require("./config/db");
 
-connectDB().then(() => {
-    const app = express();
 
-    app.use(cors());
-    app.use(express.json());
+const app = express();
+const PORT = process.env.PORT || 5000;
 
-    app.use("/api/auth", require("./routes/authRoutes"));
+//Middleware-ek
+app.use(cors());
+app.use(express.json());
 
-    const PORT = process.env.PORT || 5000;
-    app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
-}).catch((err) => {
-    console.error("❌ Failed to connect to DB", err);
-    process.exit(1);
+//Test-route
+app.get("/", (req, res) =>{
+    res.send("API is running...");
 });
+
+//Adatbázis kapcsolódás
+mongoose
+    .connect(process.env.MONGO_URI, {
+        useNewUrlParser: true,
+    })
+    .then(() => console.log("MongoDB Connected"))
+    .catch((err) => console.log(`MongoDB nem csatlakozott ${err}`));
+
+app.listen(PORT, () => {
+    console.log(`A szerver port: ${PORT}`);
+});
+
+
+

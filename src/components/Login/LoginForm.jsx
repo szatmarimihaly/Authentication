@@ -6,8 +6,6 @@ const LoginForm = () => {
 
     const { t, i18n } = useTranslation();
 
-    const navigate = useNavigate();
-
     const navigateRegister = () => {
         navigate("/Register");
     }
