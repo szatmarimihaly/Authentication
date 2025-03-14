@@ -24,6 +24,7 @@ const resources = {
             "createAccp" : "Don't have an account yet? Create an account",
             "loginAccp" : "Already have an account? Sign in to your account",
             "forgotPasswordP" : "Forgot your password?",
+            "backToHome" : "Back to Home",
         }
     },
 
@@ -48,6 +49,7 @@ const resources = {
             "createAccp" : "Nincs még fiókja? Csináljon egy fiókot most!",
             "loginAccp" : "Van már fiókja? Lépjen be a fiókjába",
             "forgotPasswordP" : "Elfelejtette a jelszavát?",
+            "backToHome" : "Vissza a főoldalra",
         }
     }
 }
