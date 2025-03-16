@@ -25,6 +25,9 @@ const resources = {
             "loginAccp" : "Already have an account? Sign in to your account",
             "forgotPasswordP" : "Forgot your password?",
             "backToHome" : "Back to Home",
+
+            "WelcomeUser" : "Welcome, ",
+            "LogoutBtn" : "Logout",
         }
     },
 
@@ -50,6 +53,11 @@ const resources = {
             "loginAccp" : "Van már fiókja? Lépjen be a fiókjába",
             "forgotPasswordP" : "Elfelejtette a jelszavát?",
             "backToHome" : "Vissza a főoldalra",
+
+            
+            "WelcomeUser" : "Üdvözlünk, ",
+            "LogoutBtn" : "Kijelentkezés",
+            
         }
     }
 }
