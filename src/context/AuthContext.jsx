@@ -4,7 +4,7 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [token, setToken] = useState(localStorage.getItem("token") || null);
+  const [token, setToken] = useState(sessionStorage.getItem("token") || null);
   const [loading, setLoading] = useState(true); // <-- Új loading állapot
 
   // Felhasználói adatok betöltése a token alapján (oldal frissítésekor)
@@ -36,13 +36,13 @@ export const AuthProvider = ({ children }) => {
   }, [token]);
 
   const login = (userData, token) => {
-    localStorage.setItem("token", token);
+    sessionStorage.setItem("token", token);
     setToken(token);
     setUser(userData);
   };
 
   const logout = () => {
-    localStorage.removeItem("token");
+    sessionStorage.removeItem("token");
     setToken(null);
     setUser(null);
   };

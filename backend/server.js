@@ -4,9 +4,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5173";
+const authenticateToken = require("./middleWare/authMiddleware"); 
 
-// Middleware importálása
-const authenticateToken = require("./middleWare/authMiddleware"); // <-- Import hozzáadva
 
 // Express alkalmazás létrehozása
 const app = express();
@@ -20,7 +19,7 @@ app.use(
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
-); // Kliens oldali kérések engedélyezése
+);
 
 const authRoutes = require("./routes/auth");
 app.use("/api/auth", authRoutes);

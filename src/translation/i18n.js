@@ -26,7 +26,7 @@ const resources = {
             "forgotPasswordP" : "Forgot your password?",
             "backToHome" : "Back to Home",
 
-            "WelcomeUser" : "Welcome, ",
+            "WelcomeUser" : "Welcome",
             "LogoutBtn" : "Logout",
         }
     },
@@ -55,7 +55,7 @@ const resources = {
             "backToHome" : "Vissza a főoldalra",
 
             
-            "WelcomeUser" : "Üdvözlünk, ",
+            "WelcomeUser" : "Üdvözlünk",
             "LogoutBtn" : "Kijelentkezés",
             
         }

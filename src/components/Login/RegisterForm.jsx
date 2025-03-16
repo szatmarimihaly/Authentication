@@ -3,6 +3,7 @@ import SubmitBtn from "./SubmitBtn.jsx";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext.jsx";
 
+
 const RegisterForm = () => {
 
     const { t, i18n } = useTranslation();
