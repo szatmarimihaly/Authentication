@@ -10,7 +10,7 @@ const NavbarLang = () => {
     }
 
     return(
-        <button className = "w-20 text-lg rounded bg-transparent py-1 px-0.5 hover:bg-black text-black hover:text-white hover:rounded transition duration-300 ease-in-out"
+        <button className = "w-20 text-lg rounded bg-transparent text-white hover:text-white hover:rounded transition duration-300 ease"
                 onClick={changeLanguage}>{i18n.language === 'hu' ? 'HU' : 'EN'}</button>
     );
 

@@ -15,8 +15,8 @@ const Navbar = () => {
     }
 
     return(
-        <div className = "flex items-center justify-evenly mt-4 text-lg">
-            <img className = "w-40" src = "/logo.png" alt = "EDU.Ai"></img>
+        <div className = "flex items-center justify-between mt-2 p-4 mr-10 ml-10 rounded-xl text-lg">
+            <img className = "w-50" src = "/eduai.png" alt = "EDU.Ai"></img>
             <NavbarLang/>
             <NavbarBtn text = {t('header-about')} />
             <NavbarBtn text = {t('header-company')} />

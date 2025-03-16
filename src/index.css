@@ -3,11 +3,62 @@
 
 @layer utilities {
     .gradient-text{
-        background : linear-gradient(to right, #000, #1a2949, #194acc, #1548cc);
-        -webkit-background-clip: text;
+        background : linear-gradient(to right, #db1fdb, #731ec2, #a904eb);
+        -webkit-background-clip: text; 
         background-clip: text;
         color: transparent;
+        cursor: default;
     }
+
+    .gradient-button {
+        background: linear-gradient(to right, #db1fdb, #ac1fac, #8715f1);
+        color: white; /* A szöveg színe */
+        border: none; /* Keret eltávolítása */
+        padding: 10px 20px; /* Belső térköz */
+        font-size: 16px; /* Betűméret */
+        cursor: pointer; /* Mutató ikon */
+        border-radius: 10px; /* Kerekített sarkok */
+        transition: all 0.3s ease; /* Sima átmenet a hover effekthez */
+        width: 120px;
+      }
+      
+      .gradient-button:hover {
+        background: linear-gradient(to right, #a904eb, #731ec2, #db1fdb);
+        transform: scale(1.05); /* Hover esetén megfordítjuk a gradientet */
+      }
+      
+      .gradient-what{
+        background: linear-gradient(to right, #db1fdb, #ac1fac, #8715f1);/* A szöveg színe */
+        border: none; /* Keret eltávolítása */
+        padding: 10px 20px; /* Belső térköz */
+        font-size: 16px; /* Betűméret */
+        cursor: pointer; /* Mutató ikon */
+        border-radius: 20px; /* Kerekített sarkok */
+        transition: all 0.3s ease; /* Sima átmenet a hover effekthez */
+      }
+
+      .gradient-what{
+        transform: scale(1.05);
+      }
+      
+      .gradient-border-button {
+        background: transparent; /* Átlátszó háttér */ /* Szöveg színe */
+        color: white;
+        border: 2px solid; /* Keret vastagsága */
+        border-image: linear-gradient(to right, #db1fdb, #731ec2, #a904eb) 1; /* Gradient keret */
+        padding: 10px 20px; /* Belső térköz */
+        font-size: 16px; /* Betűméret */
+        cursor: pointer; /* Mutató ikon */
+        border-radius: 20px; /* Kerekített sarkok */
+        transition: color 0.5s ease, border-image 0.3s ease; /* Átmenetek */
+      }
+      
+      .gradient-border-button:hover {
+        color: white; /* Szöveg színe hover esetén */
+        border-image: linear-gradient(to right, #a904eb, #731ec2, #db1fdb) 1; /* Hover esetén megfordított gradient */
+        transform: scale(1.05);
+      }
+
 }
 
 *{
@@ -20,7 +71,8 @@ html{
 }
 
 body{
-    background-color: whitesmoke;
-    color: black;
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
 }
 

@@ -27,7 +27,7 @@ const resources = {
             "backToHome" : "Back to Home",
 
             "WelcomeUser" : "Welcome",
-            "LogoutBtn" : "Logout",
+            "LogoutBtn" : "Log Out",
         }
     },
 
@@ -66,7 +66,7 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        lng : 'hu',
+        lng : 'en',
         fallbackLng: 'hu',
         debug: true,
         interpolation: {

@@ -31,11 +31,19 @@ const ProfilePage = () => {
   };
 
   return (
-    <div>
-      <h1>
-        {t("WelcomeUser")}, {user.username}!
-      </h1>
-      <button onClick={handleLogout}>{t("LogoutBtn")}</button>
+    <div className = "flex items-center justify-between text-white p-6">
+        <div className = "">
+            <h1 className = "text-3xl">EDU.Ai</h1>
+        </div>
+
+        <div className = "">
+            <h1>Payment</h1>
+        </div>
+
+        
+        <div className = "">
+            <button className = "bg-red-700 px-4 py-2 rounded-xl font-semibold transition-duration: 300 hover:bg-red-900" onClick={handleLogout}>{t('LogoutBtn')}</button>
+        </div>
     </div>
   );
 };
