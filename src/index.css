@@ -2,6 +2,23 @@
 
 
 @layer utilities {
+
+    .bg-custom-purple {
+      background-color: #1d0030; /* Extra sötét lila */
+    }
+
+    .bg-custom-icon{
+        color: #5d0097; /* Extra sötét szürke */
+    }
+
+    .card-gradient-text{
+        background : linear-gradient(to right, #2b40ff, #731ec2, #db1fdb);
+        -webkit-background-clip: text; 
+        background-clip: text;
+        color: transparent;
+        cursor: default;
+    }
+
     .gradient-text{
         background : linear-gradient(to right, #db1fdb, #731ec2, #a904eb);
         -webkit-background-clip: text; 
@@ -19,7 +36,7 @@
         cursor: pointer; /* Mutató ikon */
         border-radius: 10px; /* Kerekített sarkok */
         transition: all 0.3s ease; /* Sima átmenet a hover effekthez */
-        width: 120px;
+        width: 150px;
       }
       
       .gradient-button:hover {

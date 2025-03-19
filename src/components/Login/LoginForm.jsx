@@ -50,7 +50,7 @@ const LoginForm = () => {
         <div className="flex flex-col items-center gap-2 bg-gray-900 rounded-lg mt-10 mr-90 ml-90">
             <h1 className="gradient-text text-3xl mt-4">{t('signIn')}</h1>
 
-            <div className="flex flex-col w-100  mt-10">
+            <div className="flex flex-col w-100 mt-10">
 
                 <input type="email"
                        placeholder={t('username')}

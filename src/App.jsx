@@ -4,6 +4,7 @@ import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 import { AuthProvider } from "./context/AuthContext.jsx";
 import ProfilePage from "./pages/ProfilePage.jsx";
+import 'remixicon/fonts/remixicon.css';
 
 
 function App() {
